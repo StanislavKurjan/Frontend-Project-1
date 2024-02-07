@@ -1,0 +1,147 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    background-color: rgb(241, 241, 241);
+}
+
+.loginForm{
+    border: none;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    width: 400px;
+}
+
+.expirationInfo{
+    display: flex;
+    gap: 15px;
+}
+
+.expirationInfo>*{
+    width: 100%;
+}
+
+#eOne, #eDate {
+    width: 100%;
+}
+
+.anotherInfo{
+    display: flex;
+    gap: 15px;
+}
+
+.anotherInfo>*{
+    width: 100%;
+}
+
+#sInOne, #sInTwo {
+    width: 100%;
+}
+
+.tab {
+    display: flex;
+}
+
+.tab>* {
+    width: 50%;
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+
+.tablinks:hover {
+    border-bottom: 2px solid rgb(87, 99, 236);
+}
+
+.active {
+    border-bottom: 2px solid rgb(87, 99, 236);
+}
+
+
+
+input {
+    margin-top: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(242, 242, 242);
+}
+
+input:focus {
+    outline: 2px solid rgb(87, 99, 236);
+}
+
+#cHolder {
+    width: 100%;
+}
+
+#cNumber {
+    width: 100%;
+}
+
+#pPal {
+    width: 100%;
+}
+
+.subButtonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#submButton {
+    margin-top: 12px;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(87, 99, 236);
+    color: white;
+}
+
+#submButton:hover {
+    background-color: rgb(68, 79, 199);
+}
+
+.tablinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#inputTwo {
+    position: relative;
+}
+
+#inputThree {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 57%;
+    left: 93%
+}
+
+.inVisible {
+    display: none;
+}
+
+
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task_form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form class="loginForm">
+
+        <div class="tab">
+            <button class="tablinks active" onclick="openCard(event, 'inputTwo')" id="defaultOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-credit-card" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+              </svg> 
+              <p>Card</p>
+            </button>
+            <button class="tablinks" onclick="openCard(event, 'inputThree')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-paypal" viewBox="0 0 16 16">
+                <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"/>
+              </svg>
+            <p>PayPal</p>
+            </button>
+        </div>
+          
+          
+        <div>
+          <label for="cHolder">Card Holder</label><br>
+          <input type="text" id="cHolder" name="cHolder">
+        </div>
+
+        <div id="inputTwo" class="tabcontent">
+          <label for="cNumber">Card Number</label><br>
+          <input type="text" id="cNumber" name="cNumber" placeholder="Placeholder ONE">
+          <div class="input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-credit-card" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+              </svg>
+          </div>
+        </div>
+
+        <div id="inputThree" class="tabcontent inVisible">
+          <label for="pPal">PayPal</label><br>
+          <input type="text" id="pPal" name="pPal" placeholder="Placeholder TWO">
+          <div class="input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-paypal" viewBox="0 0 16 16">
+              <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"/>
+            </svg>
+          </div>
+        </div>
+          
+          <div class="expirationInfo">
+            <div>
+            <label for="eOne">Expiration Month</label><br>
+            <input type="text" id="eOne" name="eOne"></div>
+            <div>
+            <label for="eDate">Expiration Year</label><br>
+            <input type="text" id="eDate" name="eDate"></div>
+          </div>
+
+          <div class="anotherInfo">
+            <div>
+            <label for="sInOne">Security Code</label><br>
+            <input type="text" id="sInOne" name="sInOne"></div>
+            <div>
+            <label for="sInTwo">Postal Code</label><br>
+            <input type="text" id="sInTwo" name="sInTwo"></div>
+          </div>
+          
+          <div class="subButtonDiv">
+          <button type="submit" id="submButton">Submit</button>
+          </div>
+
+
+    </form>
+    <script src="formScript.js"></script>
+</body>
+</html>
